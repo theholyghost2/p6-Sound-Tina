@@ -50,7 +50,7 @@ class Sound::Tina::WAVParser is Sound::Tina::FileParser {
 	}
 
 	### main method for parsing 16,24,32 bit WAV files
-	method fillbuffers($buffer) {
+	method fill-buffers($buffer) {
 		self.readheader($buffer);
 
 		given $.bitspersample {

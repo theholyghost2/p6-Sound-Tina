@@ -11,7 +11,7 @@ with the frames after reading the WAV file header.
 
 =head2 PatternChannelLib.pm6
 
-The method simplesearch($channelnumber, @bit8pattern) searches on a channel number
+The method simplesearch($channelnumber, $bit8pattern) searches on a channel number
 for a 8 bit pattern (single channel, so no crossover to other channels.)
 There are 2 channels in a 16 bit WAV file and 4 in a 32 bit WAV file.
 

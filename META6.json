@@ -1,0 +1,31 @@
+{
+        "perl" : "6.c",
+        "name" : "Sound::Tina",
+        "auth" : "CPAN:HOLYGHOST",
+        "api" : "1",
+        "version" : "0.1.6",
+        "description" : "Wave (WAV) Sound system with pattern recognition",
+        "authors" : [ "The Holy Ghost" ],
+        "license" : "General Public License 3, Artistic-2.0",
+        "provides" : {
+            "Sound::Tina::DataChunk" : "lib/Sound/Tina/DataChunk.pm6",
+            "Sound::Tina::File32Parser" : "lib/Sound/Tina/File32Parser.pm6",
+            "Sound::Tina::FileXYParser" : "lib/Sound/Tina/FileXYParser.pm6",
+            "Sound::Tina::Matrix32bit" : "lib/Sound/Tina/Matrix32bit.pm6",
+            "Sound::Tina::Parser" : "lib/Sound/Tina/Parser.pm6",
+            "Sound::Tina::PatternChannelLib" : "lib/Sound/Tina/PatternChannelLib.pm6",
+            "Sound::Tina::PatternLib" : "lib/Sound/Tina/PatternLib.pm6",
+            "Sound::Tina::Vector32bit" : "lib/Sound/Tina/Vector32bit.pm6",
+            "Sound::Tina::Vector8bit" : "lib/Sound/Tina/Vector8bit.pm6",
+            "Sound::Tina::WAVParser" : "lib/Sound/Tina/WAVParser.pm6",
+            "Sound::Tina::WaveFile" : "lib/Sound/Tina/WaveFile.pm6"
+        },
+        "depends" : [ ],
+        "build-depends" : [ ],
+        "test-depends" : [ ],
+        "resources" : [ ],
+        "tags": [
+          "Sound", "Tina"
+        ],
+        "source-url" : "http://cpan.metacpan.org/authors/id/H/HO/HOLYGHOST/Perl6/Sound-Tina-0.1.6.tar.gz"
+    }

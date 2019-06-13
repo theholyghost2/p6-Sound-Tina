@@ -1,0 +1,24 @@
+=begin pod 
+
+=NAME    Sound::Tina 
+=AUTHOR  The Holy Ghost 
+=VERSION 0.1
+
+=head1 WAVParser.pm6 
+This is the main method for parsing 16,24,32 bit WAV files :
+fillbuffers($buffer) where $buffer is a list reference which gets filled
+with the frames after reading the WAV file header.
+
+=head2 PatternChannelLib.pm6
+
+The method simplesearch($channelnumber, @bit8pattern) searches on a channel number
+for a 8 bit pattern (single channel, so no crossover to other channels.)
+There are 2 channels in a 16 bit WAV file and 4 in a 32 bit WAV file.
+
+The WAVParser above sets a multiple channel number from the header, so it can 
+parse both 16 and 32 bit WAV files.
+
+The constructor of this class takes a WAVParser argument which has already loaded
+its buffer.
+
+=end pod

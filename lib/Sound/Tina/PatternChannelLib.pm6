@@ -17,7 +17,7 @@ class Sound::Tina::PatternChannelLib {
 			$!patterns4 = $($wavparser.getflowchannels());
 	}
 
-	method simplesearch($channelnumber, @bit8pattern) { # array with multiple 1st channel Vector8bit (Vector32bit.fromxtoybit)
+	method simplesearch($channelnumber, $bit8pattern) { # array with multiple 1st channel Vector8bit (Vector32bit.fromxtoybit)
 
 
 		my $patterns;
@@ -39,17 +39,24 @@ class Sound::Tina::PatternChannelLib {
 
 
 		loop (my $i = 0; $i < len($patterns); $i++) {
-			loop (my $j = 0; $j < @bit8pattern.elems; $j++) {
-				if (@bit8pattern[$j] == $patterns[$i+$j]) {
-					next;
-				}
-				if ($j == @bit8pattern.elems - 1) {
-					print "found an 8bit pattern in channel " ~ $channelnumber;
-					return ($i, $j);
-				}		
+			if ($bit8pattern == $patterns[$i]) {
+				print "found an 8bit pattern in channel " ~ $channelnumber;
+					return $i;
 			}
 				
 		}
+#		loop (my $i = 0; $i < len($patterns); $i++) {
+#			loop (my $j = 0; $j < @bit8pattern.elems; $j++) {
+#				if (@bit8pattern[$j] == $patterns[$i+$j]) {
+#					next;
+#				}
+#				if ($j == @bit8pattern.elems - 1) {
+#					print "found an 8bit pattern in channel " ~ $channelnumber;
+#					return ($i, $j);
+#				}		
+#			}
+#				
+#		}
 	
 	}
 

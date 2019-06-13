@@ -80,7 +80,6 @@ class Sound::Tina::PatternChannelLib {
 					return ($i, $j);
 				}		
 
-				$i += $j;
 			}
 				
 		}
